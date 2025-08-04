@@ -72,5 +72,11 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx")
 
     // Declare the dependency for the Firebase Firestore Database
-    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Declare the dependency for the Firebase Messaging
+    implementation("com.google.firebase:firebase-messaging-ktx")
+
+    // Declare the dependency for google location services
+    implementation("com.google.android.gms:play-services-location:21.3.0")
 }
