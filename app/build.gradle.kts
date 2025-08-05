@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,7 +69,7 @@ dependencies {
     // Add the dependency for the Firebase SDK for Google Analytics
     implementation("com.google.firebase:firebase-analytics")
 
-    // Declare the dependency for the Firebase Authentxication library
+    // Declare the dependency for the Firebase Authentication library
     implementation("com.google.firebase:firebase-auth-ktx")
 
     // Declare the dependency for the Firebase Firestore Database
@@ -79,4 +80,13 @@ dependencies {
 
     // Declare the dependency for google location services
     implementation("com.google.android.gms:play-services-location:21.3.0")
+
+    // Declare the dependency for
+    implementation("androidx.activity:activity-compose:1.10.1")
+
+    // Declare the dependency for
+    implementation("androidx.compose.material3:material3:1.3.2")
+
+    // Declare the dependency for
+    implementation("androidx.navigation:navigation-compose-android:2.9.3")
 }
