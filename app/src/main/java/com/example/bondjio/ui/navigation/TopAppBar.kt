@@ -3,9 +3,9 @@ package com.example.bondjio.ui.navigation
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -40,8 +40,7 @@ fun TopBar() {
                 Image(
                     painter = painterResource(R.drawable.logo),
                     contentDescription = "App Logo",
-                    modifier = Modifier
-                        .fillMaxHeight()
+                    modifier = Modifier.size(103.dp) // .fillMaxWidth() makes it too big
                 )
 
                 // Icons aligned to the right
