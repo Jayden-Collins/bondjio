@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
@@ -35,7 +34,10 @@ fun AppNavigation() {
 
         composable(Routes.Tickets.route) {
             Scaffold(
-                topBar = { TopAppBar(title = { Text("My Tickets") }) },
+                //topBar = { TopAppBar(title = { Text("My Tickets") }) },
+                topBar = {
+                    TopBar()
+                },
                 bottomBar = { BottomNavBar(navController) },
                 content = { padding ->
                     Column(modifier = Modifier.padding(padding)) {
@@ -47,7 +49,7 @@ fun AppNavigation() {
 
         composable(Routes.Community.route) {
             Scaffold(
-                topBar = { TopAppBar(title = { Text("Community") }) },
+                topBar = { TopBar() },
                 bottomBar = { BottomNavBar(navController) },
                 content = { padding ->
                     Column(modifier = Modifier.padding(padding)) {
@@ -59,7 +61,7 @@ fun AppNavigation() {
 
         composable(Routes.Account.route) {
             Scaffold(
-                topBar = { TopAppBar(title = { Text("Account") }) },
+                topBar = { TopBar() },
                 bottomBar = { BottomNavBar(navController) },
                 content = { padding ->
                     Column(modifier = Modifier.padding(padding)) {
