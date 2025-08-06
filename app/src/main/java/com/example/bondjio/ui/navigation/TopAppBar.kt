@@ -31,7 +31,7 @@ fun TopBar() {
         title = {
             Row(
                 modifier = Modifier
-                    .padding(start = 4.dp, top = 8.dp, end = 8.dp, bottom = 8.dp)
+                    .padding(start = 4.dp, end = 8.dp, bottom = 8.dp)
                     .fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
