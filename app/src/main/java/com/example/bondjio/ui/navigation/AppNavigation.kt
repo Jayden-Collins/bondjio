@@ -9,6 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.bondjio.ui.screens.Community
+import com.example.bondjio.ui.screens.EventDetail
 import com.example.bondjio.ui.screens.Home
 import com.example.bondjio.ui.screens.Login
 import com.example.bondjio.ui.screens.Search
@@ -42,6 +44,11 @@ fun AppNavigation() {
 
         composable(Routes.Account.route) {
             Login(navController)
+        }
+
+        composable(Routes.EventDetail.route) {
+            // Pass the eventId?
+            EventDetail(navController)
         }
     }
 }
