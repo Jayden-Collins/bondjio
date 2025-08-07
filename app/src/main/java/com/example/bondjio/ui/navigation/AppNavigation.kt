@@ -15,6 +15,7 @@ import com.example.bondjio.ui.screens.Home
 import com.example.bondjio.ui.screens.Login
 import com.example.bondjio.ui.screens.Search
 import com.example.bondjio.ui.screens.Tickets
+import com.example.bondjio.ui.screens.Community
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
