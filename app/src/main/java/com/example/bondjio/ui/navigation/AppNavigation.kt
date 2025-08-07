@@ -2,18 +2,16 @@ package com.example.bondjio.ui.navigation
 
 //Root NavHost + routes
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.bondjio.ui.screens.Home
+import com.example.bondjio.ui.screens.Login
 import com.example.bondjio.ui.screens.Search
+import com.example.bondjio.ui.screens.Tickets
+import com.example.bondjio.ui.screens.Community
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -33,42 +31,15 @@ fun AppNavigation() {
         }
 
         composable(Routes.Tickets.route) {
-            Scaffold(
-                //topBar = { TopAppBar(title = { Text("My Tickets") }) },
-                topBar = {
-                    TopBar()
-                },
-                bottomBar = { BottomNavBar(navController) },
-                content = { padding ->
-                    Column(modifier = Modifier.padding(padding)) {
-                        Text("My Tickets")
-                    }
-                }
-            )
+            Tickets(navController)
         }
 
         composable(Routes.Community.route) {
-            Scaffold(
-                topBar = { TopBar() },
-                bottomBar = { BottomNavBar(navController) },
-                content = { padding ->
-                    Column(modifier = Modifier.padding(padding)) {
-                        Text("Community")
-                    }
-                }
-            )
+            Community(navController)
         }
 
         composable(Routes.Account.route) {
-            Scaffold(
-                topBar = { TopBar() },
-                bottomBar = { BottomNavBar(navController) },
-                content = { padding ->
-                    Column(modifier = Modifier.padding(padding)) {
-                        Text("Account")
-                    }
-                }
-            )
+            Login(navController)
         }
     }
 }
