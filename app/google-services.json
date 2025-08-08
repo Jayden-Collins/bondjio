@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "578046192684",
+    "project_id": "bondjio",
+    "storage_bucket": "bondjio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578046192684:android:733e65d2a037bffaf0f589",
+        "android_client_info": {
+          "package_name": "com.example.bondjio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578046192684-oqj4ppt1c9lkpo2o6q6lauldj22la9up.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bondjio",
+            "certificate_hash": "eedf2c94f8c108b802260025fb2e0827bef6437c"
+          }
+        },
+        {
+          "client_id": "578046192684-dqff5vmc2q5b9i1u0chjmpfq8g2bmbbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI1ODNLDDD139OxE1J37Eqv3Xxa8q-Nms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578046192684-dqff5vmc2q5b9i1u0chjmpfq8g2bmbbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,7 +13,7 @@ import com.example.bondjio.ui.navigation.TopBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Search(navController: NavController) {
+fun Community(navController: NavController) {
     Scaffold(
         topBar = { TopBar() },
         bottomBar = { BottomNavBar(navController) },
