@@ -43,6 +43,15 @@ val Typography = Typography(
         letterSpacing = 0.15.sp
     ),
 
+    // subtitle (small) bold
+    labelMedium = TextStyle(
+        fontFamily = SFPro,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 16.sp, // 16, 24, .5
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+
     // subtitle (small)
     labelSmall = TextStyle(
         fontFamily = SFPro,

@@ -97,4 +97,7 @@ dependencies {
 
     // Declare the dependency for
     implementation("androidx.navigation:navigation-compose-android:2.9.3")
+
+    // Declare the dependency for Coil image loading library
+    implementation("io.coil-kt:coil-compose:2.4.0")
 }

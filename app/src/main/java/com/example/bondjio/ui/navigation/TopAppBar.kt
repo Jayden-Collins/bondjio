@@ -51,7 +51,7 @@ fun TopBar() {
                         Icon(
                             painter = painterResource(R.drawable.ic_likes),
                             contentDescription = "Your Likes",
-                            tint = color
+                            tint = blue
                         )
                     }
                     IconButton(onClick = onNotificationsClick) {
