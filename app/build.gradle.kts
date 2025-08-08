@@ -72,8 +72,16 @@ dependencies {
     // Declare the dependency for the Firebase Authentication library
     implementation("com.google.firebase:firebase-auth-ktx")
 
+    // Also add the dependencies for the Credential Manager libraries and specify their versions
+    implementation("androidx.credentials:credentials:1.3.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.3.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
+
     // Declare the dependency for the Firebase Firestore Database
     implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Declare the dependency for coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 
     // Declare the dependency for the Firebase Messaging
     implementation("com.google.firebase:firebase-messaging-ktx")
